@@ -1,0 +1,112 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Head Movement",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "icon_path": ["static/images/head.png"]
+    },
+    {
+      "id": 2,
+      "name": "Manual Navigation",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "icon_path": ["static/images/tap.png"]
+    },
+    {
+      "id": 3,
+      "name": "Autonomous Navigation",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "icon_path": ["static/images/ai.png", "static/images/choice.png"]
+    },
+    {
+      "id": 4,
+      "name": "Automatic Room Chooser",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 openccv.py",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 5,
+      "name": "Voice Navigation",
+      "command": "conda activate",
+      "icon_path": ["static/images/voice.png"]
+    },
+    {
+      "id": 6,
+      "name": "Human Tracking",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"]
+    },
+    {
+      "id": 7,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 8,
+      "name": "Object Detection",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 9,
+      "name": "Human Tracking",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"]
+    },
+    {
+      "id": 10,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 7,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 8,
+      "name": "Object Detection",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 9,
+      "name": "Human Tracking",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"]
+    },
+    {
+      "id": 10,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 7,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 8,
+      "name": "Object Detection",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    },
+    {
+      "id": 9,
+      "name": "Human Tracking",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"]
+    },
+    {
+      "id": 10,
+      "name": "Eye Tracker",
+      "command": "conda activate",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+    }
+  ]
+}
