@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore')
 SHORT_NORMALIZE = (1.0 / 32768.0)
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = 22050
+RATE = 44100
 swidth = 2
 CHUNK = 1024
 TimeoutSignal = ((RATE / CHUNK * 1) + 2)
@@ -69,10 +69,9 @@ def recording(lastblock, stream, wav_name, wav_n, wav_num):
 def listen():
     global silence, STOPPING
 
-    wav_id = "CARELxx"
+    wav_id = "AFIFU"
 
-    stream = audio.open(format=FORMAT, channels=CHANNELS,
-                        frames_per_buffer=CHUNK)
+    stream = audio.open(format=FORMAT, rate=RATE, channels=CHANNELS, frames_per_buffer=CHUNK, input=True)
     
     print("Welcome! id: " + wav_id)
 
