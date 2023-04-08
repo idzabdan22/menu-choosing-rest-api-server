@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Head Movement",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "command": ". /home/comvis/archiconda3/bin/activate arga && python /home/comvis/menus/head/head_tracking.py",
       "icon_path": ["static/images/head.png"]
     },
     {
