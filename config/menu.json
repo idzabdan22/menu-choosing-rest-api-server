@@ -4,55 +4,76 @@
       "id": 1,
       "name": "Head Movement",
       "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
-      "icon_path": ["static/images/head.png"]
+      "icon_path": ["static/images/head.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 2,
       "name": "Manual Navigation",
       "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
-      "icon_path": ["static/images/tap.png"]
+      "icon_path": ["static/images/tap.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 3,
       "name": "Stairs and Tilt Detection",
       "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
-      "icon_path": ["static/images/stair1.png", "static/images/alert.png"]
+      "icon_path": ["static/images/stair1.png", "static/images/alert.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 4,
       "name": "Automatic Room Chooser",
       "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 openccv.py",
-      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"]
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 5,
       "name": "Voice Navigation",
       "command": "conda activate",
-      "icon_path": ["static/images/voice.png"]
+      "icon_path": ["static/images/voice.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 6,
       "name": "Human Following",
       "command": "conda activate",
-      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"]
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 7,
       "name": "Remote Navigation",
       "command": "conda activate",
-      "icon_path": ["static/images/remote-control.png", "static/images/remote-control-nav.png"]
+      "icon_path": [
+        "static/images/remote-control.png",
+        "static/images/remote-control-nav.png"
+      ],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 8,
       "name": "Eye Navigation",
       "command": "conda activate",
-      "icon_path": ["static/images/eye.png"]
+      "icon_path": ["static/images/eye.png"],
+      "window_count": 2,
+      "flag": true
     },
     {
       "id": 9,
       "name": "Road Surface Detection",
       "command": "conda activate",
-      "icon_path": ["static/images/road.png", "static/images/alert.png"]
+      "icon_path": ["static/images/road.png", "static/images/alert.png"],
+      "window_count": 2,
+      "flag": true
     }
   ]
 }
