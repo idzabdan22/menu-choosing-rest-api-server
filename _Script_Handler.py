@@ -24,7 +24,7 @@ class _Script_Handler:
             cmd = self.menus[id]["command"]
             subprocess.Popen(cmd, shell=True, executable='/bin/bash')
         except Exception as e:
-            print("CANNOT RUN SCRIPT")
+            print("CANNOT RUN SCRIPT", e)
 
     def deactiver(self,):
         try:

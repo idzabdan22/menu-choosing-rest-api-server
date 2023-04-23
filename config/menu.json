@@ -6,20 +6,20 @@
       "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
       "icon_path": ["static/images/head.png"],
       "window_count": 2,
-      "flag": true
+      "flag": false
     },
     {
       "id": 2,
       "name": "Manual Navigation",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv1.py",
       "icon_path": ["static/images/tap.png"],
-      "window_count": 2,
-      "flag": true
+      "window_count": 1,
+      "flag": false
     },
     {
       "id": 3,
       "name": "Stairs and Tilt Detection",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv1.py",
       "icon_path": ["static/images/stair1.png", "static/images/alert.png"],
       "window_count": 2,
       "flag": true
