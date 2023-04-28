@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Automatic Room Chooser",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 openccv.py",
+      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
       "icon_path": ["static/images/wheelchair.png", "static/images/door.png"],
       "window_count": 2,
       "flag": true

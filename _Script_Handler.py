@@ -3,6 +3,7 @@ import os
 import subprocess
 import psutil
 import time
+import threading
 
 class _Script_Handler:
     def __init__(self,): # parse object menu.json
@@ -28,12 +29,17 @@ class _Script_Handler:
 
     def deactiver(self,):
         try:
-            with open("output/runningPid.json", "r") as jsonFile:
-                data = json.load(jsonFile)
-                pid = data["running_pid"]
-                cmd = f"kill -9 {pid}"
-                subprocess.call(cmd, shell=True, executable='/bin/bash')
-                print("SUCCESSFULLY STOPPED SCRIPT")
+            runningProcess = ""
+            while not runningProcess:
+                result = subprocess.run(["ps -aux | grep python | grep opencv.py"], shell=True, capture_output=True, text=True)
+                runningProcess = result.stdout.split("\n")[0].split()[1]
+                print(result.stdout.split("\n")[0].split()[1])
+            cmd = f"kill SIGTERM {runningProcess}"
+            subprocess.call(cmd, shell=True, executable='/bin/bash')
+            # with open("output/runningPid.json", "r") as jsonFile:
+            #     data = json.load(jsonFile)
+            #     pid = data["running_pid"]
+            print("SUCCESSFULLY STOPPED SCRIPT")
         except Exception as e:
             print("CANNOT RUN SCRIPT")
     
@@ -46,6 +52,11 @@ class _Script_Handler:
                 print("INIT")
     
     def receiveCommand(self, command):
+        # runnerThread = threading.Thread(target=self.runner, args=(id,))
+        # deactiverThread = threading.Thread(target=self.deactiver, args=())
+        # runnerThread.start()
+        # deactiverThread.start()
+        # runnerThread.join()
         if command != 0:
             self.runner(command)
         else:

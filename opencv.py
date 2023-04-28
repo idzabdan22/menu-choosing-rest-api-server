@@ -5,15 +5,6 @@ import os
 # define a video capture object
 vid = cv2.VideoCapture(0)
 
-with open("output/runningPid.json", "r") as jsonFile:
-	data = json.load(jsonFile)
-
-pid = os.getpid()
-data["running_pid"] = pid         
-
-with open("output/runningPid.json", "w") as jsonFile:
-	json.dump(data, jsonFile)
-
 while(True):
 	# Capture the video frame
 	# by frame
