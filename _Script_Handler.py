@@ -34,7 +34,7 @@ class _Script_Handler:
                 result = subprocess.run(["ps -aux | grep python | grep opencv.py"], shell=True, capture_output=True, text=True)
                 runningProcess = result.stdout.split("\n")[0].split()[1]
                 print(result.stdout.split("\n")[0].split()[1])
-            cmd = f"kill SIGTERM {runningProcess}"
+            cmd = f"kill -9 {runningProcess}"
             subprocess.call(cmd, shell=True, executable='/bin/bash')
             print("SUCCESSFULLY STOPPED SCRIPT")
         except Exception as e:
