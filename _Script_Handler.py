@@ -1,9 +1,6 @@
 import json
-import os
 import subprocess
 import psutil
-import time
-import threading
 
 class _Script_Handler:
     def __init__(self,): # parse object menu.json
@@ -31,7 +28,7 @@ class _Script_Handler:
         try:
             runningProcess = ""
             while not runningProcess:
-                result = subprocess.run(["ps -aux | grep python | grep opencv.py"], shell=True, capture_output=True, text=True)
+                result = subprocess.run(["ps -aux | grep python | grep opencv1.py"], shell=True, capture_output=True, text=True)
                 runningProcess = result.stdout.split("\n")[0].split()[1]
                 print(result.stdout.split("\n")[0].split()[1])
             cmd = f"kill -9 {runningProcess}"
@@ -39,14 +36,6 @@ class _Script_Handler:
             print("SUCCESSFULLY STOPPED SCRIPT")
         except Exception as e:
             print("CANNOT RUN SCRIPT")
-    
-    def runningChecker(self,):
-        while True:
-            if psutil.pid_exists(self.runningId+1):
-                print("SUCCESSFULLY RUNNING SCRIPT")
-                break
-            else:
-                print("INIT")
     
     def receiveCommand(self, command):
         if command != 0:
