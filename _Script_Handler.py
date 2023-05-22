@@ -1,9 +1,12 @@
 import json
 import subprocess
 import psutil
+import serial
+import time
 
 class _Script_Handler:
     def __init__(self,): # parse object menu.json
+        self.arduino_serial = serial.Serial ('/dev/ttyACM0',9600,timeout=0.1)
         _mapping = {}
         try:
             with open("config/menu.json") as json_file:
@@ -28,11 +31,15 @@ class _Script_Handler:
         try:
             runningProcess = ""
             while not runningProcess:
-                result = subprocess.run(["ps -aux | grep python | grep opencv1.py"], shell=True, capture_output=True, text=True)
+                result = subprocess.run(["ps -aux | grep python | grep menu.py"], shell=True, capture_output=True, text=True)
                 runningProcess = result.stdout.split("\n")[0].split()[1]
                 print(result.stdout.split("\n")[0].split()[1])
             cmd = f"kill -9 {runningProcess}"
             subprocess.call(cmd, shell=True, executable='/bin/bash')
+            for _ in range(0,5):
+                print("STOPPING ARDUINO")
+                self.arduino_serial.write(bytes("1", 'utf-8'))
+                time.sleep(0.1)
             print("SUCCESSFULLY STOPPED SCRIPT")
         except Exception as e:
             print("CANNOT RUN SCRIPT")

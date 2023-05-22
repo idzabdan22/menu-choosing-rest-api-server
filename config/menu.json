@@ -2,78 +2,78 @@
   "menu": [
     {
       "id": 1,
-      "name": "Head Movement",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
-      "icon_path": ["static/images/head.png"],
-      "window_count": 2,
-      "flag": false
-    },
-    {
-      "id": 2,
       "name": "Manual Navigation",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv1.py",
+      "command": ". /home/comvis/archiconda3/bin/activate tobi && python /home/comvis/menus/keyboard/menu.py",
       "icon_path": ["static/images/tap.png"],
       "window_count": 1,
       "flag": false
     },
     {
-      "id": 3,
-      "name": "Stairs and Tilt Detection",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv1.py",
-      "icon_path": ["static/images/stair1.png", "static/images/alert.png"],
-      "window_count": 2,
-      "flag": true
-    },
-    {
-      "id": 4,
-      "name": "Automatic Room Chooser",
-      "command": "conda init bash  && . /home/abdan2345/miniconda3/bin/activate abdan2 && cd /home/abdan2345/Development/menu_app_v1/backend && python3 opencv.py",
-      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"],
-      "window_count": 2,
-      "flag": true
-    },
-    {
-      "id": 5,
-      "name": "Voice Navigation",
-      "command": "conda activate",
-      "icon_path": ["static/images/voice.png"],
-      "window_count": 2,
-      "flag": true
-    },
-    {
-      "id": 6,
-      "name": "Human Following",
-      "command": "conda activate",
-      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"],
-      "window_count": 2,
-      "flag": true
-    },
-    {
-      "id": 7,
+      "id": 2,
       "name": "Remote Navigation",
-      "command": "conda activate",
+      "command": "",
       "icon_path": [
         "static/images/remote-control.png",
         "static/images/remote-control-nav.png"
       ],
-      "window_count": 2,
+      "window_count": 1,
       "flag": true
     },
     {
-      "id": 8,
+      "id": 3,
+      "name": "Voice Navigation",
+      "command": ". /home/comvis/archiconda3/bin/activate tobi && python /home/comvis/menus/ale/menu.py",
+      "icon_path": ["static/images/voice.png"],
+      "window_count": 1,
+      "flag": false
+    },
+    {
+      "id": 4,
+      "name": "Human Following",
+      "command": ". /home/comvis/archiconda3/bin/activate fadhel && python /home/comvis/menus/sand/menu.py",
+      "icon_path": ["static/images/wheelchair.png", "static/images/walk.png"],
+      "window_count": 1,
+      "flag": false
+    },
+    {
+      "id": 5,
+      "name": "Head Movement",
+      "command": ". /home/comvis/archiconda3/bin/activate arga && python /home/comvis/menus/head/menu.py",
+      "icon_path": ["static/images/head.png"],
+      "window_count": 1,
+      "flag": false
+    },
+    {
+      "id": 6,
       "name": "Eye Navigation",
-      "command": "conda activate",
+      "command": ". /home/comvis/archiconda3/bin/activate arga && python /home/comvis/menus/mata/menu.py",
       "icon_path": ["static/images/eye.png"],
       "window_count": 2,
       "flag": true
     },
     {
-      "id": 9,
+      "id": 7,
+      "name": "Automatic Room Chooser",
+      "command":  ". /home/comvis/archiconda3/bin/activate fadhel && python /home/comvis/menus/ain/menu.py",
+      "icon_path": ["static/images/wheelchair.png", "static/images/door.png"],
+      "window_count": 1,
+      "flag": false
+    },
+    {
+      "id": 8,
       "name": "Road Surface Detection",
-      "command": "conda activate",
+      "command": ". /home/comvis/archiconda3/bin/activate arga && python /home/comvis/menus/arga/menu.py",
       "icon_path": ["static/images/road.png", "static/images/alert.png"],
-      "window_count": 2,
-      "flag": true
+      "window_count": 1,
+      "flag": false
+    },
+    {
+      "id": 9,
+      "name": "Stairs and Tilt Detection",
+      "command": ". /home/comvis/archiconda3/bin/activate fadhel && python /home/comvis/menus/biyyu/menu.py",
+      "icon_path": ["static/images/stair1.png", "static/images/alert.png"],
+      "window_count": 1,
+      "flag": false
     }
   ]
 }
